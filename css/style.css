@@ -1,0 +1,221 @@
+/*******************/
+/** General Style **/
+/*******************/
+/* Font Nintendo */
+@font-face {
+    font-family: 'pretendo';
+    src: url(../font/Pretendo.ttf);
+}
+body{
+    margin: 0px;
+  
+  }
+/* Header */
+header{
+    height: 80px;
+    background-color: #E60012;
+    display: flex;
+    align-items: center;
+}
+header div{
+    height: 100%;
+    width: auto;
+    flex-grow: 1;
+    margin-left: 2%;
+}
+header div a img{
+    height: 100%;
+    width: auto;
+}
+header nav{
+    margin-right: 4%;
+}
+header nav ul{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    padding: 0px 40px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+/* Footer */
+/* text */
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E60012;
+}
+footer div:nth-child(1){
+    margin-left: 2%;
+    flex-grow: 1;
+}
+footer div:nth-child(1) p{
+    color: #fff;
+}
+/* Contact number */
+footer div:nth-child(2){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+footer div:nth-child(2) h4{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+footer div:nth-child(2) p{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+/* social media */
+footer div:nth-child(3) img{
+padding-right: 40px;
+}
+/******************/
+/**     HOME     **/
+/******************/
+/* Name Nintendo */
+.home section:nth-child(1){
+    height: 250px;
+    background-color: #DADADA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home section:nth-child(1) a{
+    text-decoration: none;
+}
+.home section:nth-child(1) h1{
+    font-size: 80px;
+    font-family: "pretendo";
+    color: #E60012;
+    letter-spacing: .15em;
+}
+/****/
+/* Game boy shop */
+/* Image side */
+.home section:nth-child(2){
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home section:nth-child(2) div{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.home section:nth-child(2) .game img{
+    height: 350px;
+    width: auto;
+}
+/* Price and shop side */
+.home section:nth-child(2) .price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.price div{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    width: 320px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* Game boy name */
+.price div h2{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+/* Price */
+.price div h3{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+.price div:nth-child(2){
+    padding: 3% 0 3% 0;
+}
+.price div:nth-child(2) h3{
+    font-size: 50px;
+    margin: 0px;
+}
+/* Shop */
+.price div:nth-child(3){
+    height: 55px;
+    width: 140px;
+    background-color: #E60012;
+    border-radius: 10px;
+}
+.price div:nth-child(3) h3{
+    font-size: 35px;
+    margin: 0px;
+    color: #fff;
+}
+/****/
+/* Games */
+section:nth-child(3){
+    background-color: #fff;
+    height: 400px;
+}
+section:nth-child(3) h2{
+    margin: 2% 4% 2% 4%;
+    font-size: 35px;
+    padding: .5% 0 .5% 2%; 
+    background-color: #DADADA;
+    color: #E60012;
+    border-radius: 10px;
+    letter-spacing: .3em;
+}
+/* Ajustting the images */
+.games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.games img{
+    height: 230px;
+    width: 210px;
+}
+.games div{
+    display: flex;
+    flex-direction: column;
+}
+.games div h3,
+.games div h4{
+    margin: 0px;
+    padding: 0px;
+}
+.games div h3{
+    padding: 5% 0 8% 0;
+}
+.games div h4{
+    padding-left: 2.5%;
+}
+.games div div{
+    display: flex;
+    flex-direction: row;
+}
+.games div div div{
+    height: 20px;
+    width: 5px;
+    border-radius: 3px;
+    background-color: #E60012;
+}
