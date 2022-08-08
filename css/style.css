@@ -6,10 +6,15 @@
     font-family: 'pretendo';
     src: url(../font/Pretendo.ttf);
 }
+/* Font GameBoy */
+@font-face {
+    font-family: 'GillSans';
+    src: url(../font/GilSBI30.ttf);
+}
 body{
     margin: 0px;
   
-  }
+}
 /* Header */
 header{
     height: 80px;
@@ -42,6 +47,7 @@ header nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 23px;
+    font-family: "roboto";
 }
 /* Footer */
 /* text */
@@ -58,6 +64,7 @@ footer div:nth-child(1){
 }
 footer div:nth-child(1) p{
     color: #fff;
+    font-family: "roboto";
 }
 /* Contact number */
 footer div:nth-child(2){
@@ -72,11 +79,13 @@ footer div:nth-child(2) h4{
     margin: 0px;
     padding: 0px;
     color: #fff;
+    font-family: "roboto";
 }
 footer div:nth-child(2) p{
     margin: 0px;
     padding: 0px;
     color: #fff;
+    font-family: "roboto"
 }
 /* social media */
 footer div:nth-child(3) img{
@@ -105,22 +114,22 @@ padding-right: 40px;
 /****/
 /* Game boy shop */
 /* Image side */
-.home section:nth-child(2){
+.home .home-product{
     height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.home section:nth-child(2) div{
+.home .home-product div{
     padding-left: 3%;
     padding-right: 3%;
 }
-.home section:nth-child(2) .game img{
+.home .home-product .game img{
     height: 350px;
     width: auto;
 }
 /* Price and shop side */
-.home section:nth-child(2) .price{
+.home .home-product .price{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,15 +148,17 @@ padding-right: 40px;
 }
 /* Game boy name */
 .price div h2{
-    font-size: 50px;
+    font-size: 58px;
     padding: 0px;
     margin: 0px;
+    font-family: "GillSans"
 }
 /* Price */
 .price div h3{
     font-size: 30px;
     padding: 0px;
     margin: 0px;
+    font-family: "roboto"
 }
 .price div:nth-child(2){
     padding: 3% 0 3% 0;
@@ -155,6 +166,7 @@ padding-right: 40px;
 .price div:nth-child(2) h3{
     font-size: 50px;
     margin: 0px;
+    font-family: "roboto"
 }
 /* Shop */
 .price div:nth-child(3){
@@ -164,20 +176,21 @@ padding-right: 40px;
     border-radius: 10px;
 }
 .price div:nth-child(3) h3{
-    font-size: 35px;
+    font-size: 30px;
     margin: 0px;
     color: #fff;
 }
 /****/
 /* Games */
-section:nth-child(3){
+.games-img{
     background-color: #fff;
-    height: 400px;
+    height: 430px;
 }
-section:nth-child(3) h2{
+.games-img h2{
     margin: 2% 4% 2% 4%;
     font-size: 35px;
     padding: .5% 0 .5% 2%; 
+    font-family: "roboto";
     background-color: #DADADA;
     color: #E60012;
     border-radius: 10px;
@@ -188,7 +201,7 @@ section:nth-child(3) h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 130px;
 }
 .games img{
     height: 230px;
@@ -202,12 +215,15 @@ section:nth-child(3) h2{
 .games div h4{
     margin: 0px;
     padding: 0px;
+    font-family: "roboto"
 }
 .games div h3{
     padding: 5% 0 8% 0;
+    font-family: "roboto"
 }
 .games div h4{
     padding-left: 2.5%;
+    font-family: "roboto"
 }
 .games div div{
     display: flex;
@@ -219,3 +235,170 @@ section:nth-child(3) h2{
     border-radius: 3px;
     background-color: #E60012;
 }
+/*****************/
+/**   Contact   **/
+/*****************/
+.contact section:nth-child(1){
+    height: 120px;
+    width: auto;
+    background-color: #DADADA;
+    text-align: center;
+}
+.contact section:nth-child(1) div h1{
+    font-size: 50px;
+}
+.info{
+    height: 700px;
+    background-image: url(../img/contact-bc-6.png);
+    background-repeat: no;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 200px;
+}
+.form{
+    height: 480px;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.side-info{
+    height: 480px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+}
+.side-info div h3,
+.side-info div p{
+    font-family: "roboto";
+    margin: 0;
+}
+.side-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4px;
+}
+/* Form */
+.form{
+    padding-left: 30px;
+}
+.contact .info .form{
+    font-family: "roboto";
+}
+.form input, textarea{
+    border-radius: 4px;
+    font-size: 22px;
+}
+input:focus, 
+textarea:focus {
+    background-color: #ccdaff;
+}
+#fName, #lName{
+    height: 40px;
+    width: 370px;
+}
+#lName{
+    margin-left: 10px;
+}
+#email, #subject{
+    height: 40px;
+    width: 760px;
+}
+/****************/
+/**   About   **/
+/***************/
+/* Name About Nitendo */
+.about section:nth-child(1){
+    height: 120px;
+    width: auto;
+    background-color: #DADADA;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-nintendo div h1{
+    font-size: 50px;
+    margin: 0px;
+}
+.about .about-nintendo h1{
+    font-size: 80px;
+    font-family: "pretendo";
+    color: #E60012;
+    letter-spacing: .15em;
+}
+/* Image */
+.about .about-img{
+    height: 280px;
+    background-image: url(../img/about-1.jpg);
+    background-size: contain;
+}
+/* Who we are text */
+.hist{
+    margin: 50px 350px 50px 350px;
+}
+.hist-1{
+    background-color: #E60012;
+    padding-bottom: 2px;
+}
+.hist-2{
+    background-color: #fff;
+    margin: 0px 10px 10px 10px;
+    padding: 0% 3% 3% 3%;
+    background-image: url(../img/about-bc.jpg);
+}
+.hist-2 h2, .hist-2 p{
+    margin: 25px 0px 0px 25px;
+    padding: 0px;
+}
+.hist-2 h2{
+    font-family: "roboto";
+    font-size: 29px;
+}
+.hist-2 p{
+    font-family: "roboto";
+    font-size: 21px;
+}
+/* About the company */
+.about-company{
+    height: 470px;
+    margin: 0px;
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 75px;
+}
+.about-company img{
+    height: 215px;
+    width: 380px;
+}
+.about-company h3, .about-company p, .about-company h4{
+    padding: 1.5% 0% 1.5% 0%;
+    margin: 0px;
+    font-family: "roboto";
+}
+.about-company h3{
+    font-size: 22px;
+}
+.about-company p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 0%;
+    margin: 3% 0% 3% 0%;
+}
+.about-company h4{
+    font-size: 20px;
+}
+.about-company div{
+    height: auto;
+    width: 380px;
+}
+
