@@ -23,7 +23,7 @@ header{
     align-items: center;
 }
 header div{
-    height: 100%;
+    height: 80px;
     width: auto;
     flex-grow: 1;
     margin-left: 2%;
@@ -33,7 +33,7 @@ header div a img{
     width: auto;
 }
 header nav{
-    margin-right: 4%;
+    margin-right: 53px;
 }
 header nav ul{
     margin: 0px;
@@ -95,17 +95,17 @@ padding-right: 40px;
 /**     HOME     **/
 /******************/
 /* Name Nintendo */
-.home section:nth-child(1){
+.home .name{
     height: 250px;
     background-color: #DADADA;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.home section:nth-child(1) a{
+.home .name a{
     text-decoration: none;
 }
-.home section:nth-child(1) h1{
+.home .name h1{
     font-size: 80px;
     font-family: "pretendo";
     color: #E60012;
@@ -169,16 +169,21 @@ padding-right: 40px;
     font-family: "roboto"
 }
 /* Shop */
-.price div:nth-child(3){
+.price a
+{
+    text-decoration: none;
+}
+.price a div{
     height: 55px;
     width: 140px;
     background-color: #E60012;
     border-radius: 10px;
 }
-.price div:nth-child(3) h3{
+.price a div h3{
     font-size: 30px;
     margin: 0px;
     color: #fff;
+
 }
 /****/
 /* Games */
@@ -202,6 +207,7 @@ padding-right: 40px;
     justify-content: center;
     align-items: center;
     column-gap: 130px;
+    flex-wrap: wrap;
 }
 .games img{
     height: 230px;
@@ -238,23 +244,31 @@ padding-right: 40px;
 /*****************/
 /**   Contact   **/
 /*****************/
-.contact section:nth-child(1){
+.contact .contact-name{
     height: 120px;
     width: auto;
     background-color: #DADADA;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contact section:nth-child(1) div h1{
+.contact .contact-name div h1{
+    margin: 0px;
     font-size: 50px;
+    font-family: "pretendo";
+    color: #E60012;
+    text-align: center;
 }
 .info{
     height: 700px;
-    background-image: url(../img/contact-bc-6.png);
+    background-image: url(../img/contact-bc-1.png);
     background-repeat: no;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 200px;
+    flex-wrap: wrap;
 }
 .form{
     height: 480px;
@@ -375,6 +389,7 @@ textarea:focus {
     align-items: flex-start;
     justify-content: center;
     column-gap: 75px;
+    flex-wrap: wrap;
 }
 .about-company img{
     height: 215px;
@@ -400,5 +415,300 @@ textarea:focus {
 .about-company div{
     height: auto;
     width: 380px;
+}
+/****************/
+/**    Game    **/
+/****************/
+/* Ajsuting the game image and info */
+.game .product-info{
+    height: 550px;
+    margin: 35px 0px 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    column-gap: 150px;
+}
+/* Game boy image */
+.game .game-boy img{
+    height: 380px;
+    width: auto;
+}
+/* Game boy info */
+.game .game-info{
+    width: 400px;
+}
+.game .game-info p{
+    font-family: "roboto";
+    font-size: 25px;
+    margin: 0px;
+}
+.game .game-info a{
+    font-size: 18px;
+    font-family: "roboto";
+}
+.game .game-info .rating{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* Stars rating */
+.game .game-info .rating img{
+    height: 30px;   
+}
+/* Product Price */
+.game .game-info .rating p{
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.game .game-info h2{
+    font-size: 28px;
+    font-family: "roboto";
+    margin: 12px 0px 12px 0px;
+}
+.game .game-info .basic-info{
+    display: flex;
+    column-gap: 30px;
+}
+.game .game-info .basic-info h3{
+    font-family: "roboto";
+    font-size: 18px;
+}
+.game .game-info .basic-info p{
+    font-family: "roboto";
+    font-size: 18px;
+    margin: 23px 0px 23px 0px;
+}
+/* Box to buy */
+.game .game-info .buy{
+    background-color: #E60012;
+    margin: 0px;
+    height: 35px;
+    width: 250px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game .game-info .buy h2{
+    margin: 0px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+/* Product description title */
+.game .description{
+    height: 550px;
+}
+.game .description .description-name{
+    margin: 0px 30px 20px 30px;
+    padding: 10px 0px 10px 15px;
+    background-color: #DADADA;
+    border-radius: 10px;
+}
+.game .description .description-name h2{
+    margin: 0px;
+    font-size: 25px;
+    padding: 0px;
+    font-family: "roboto";
+    color: #E60012;
+    letter-spacing: .15em;
+}
+/* Product descroption */
+.game .description h3,
+.game .description p{
+    margin: 4px 80px 4px 80px;
+    font-family: "roboto";
+    font-size: 17px;
+}
+/*****************************/
+/****  Respomsive Design  ****/
+/*****************************/
+@media screen and (min-width: 1440px){
+
+}
+/**********/
+/* 900 px */
+/**********/
+@media screen and (max-width: 900px){
+    /* Header */
+    header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-family: "roboto";
+    }
+    header nav ul li{
+        padding: 0px 20px;
+    }
+    /* Footer */
+    /* social media */
+    footer div:nth-child(3) img{
+        padding-right: 10px;
+    }
+    /* Text footer */
+    footer div:nth-child(1) p{
+        color: #fff;
+        font-family: "roboto";
+        font-size: 13px;
+    }
+    /* Contact number */
+    footer div:nth-child(2) h4{
+        margin: 0px;
+        padding: 0px;
+        color: #fff;
+        font-family: "roboto";
+        font-size: 14px;
+    }
+    footer div:nth-child(2) p{
+        margin: 0px;
+        padding: 0px;
+        color: #fff;
+        font-family: "roboto";
+        font-size: 14px;
+    }
+    /* Index */
+    .games{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+    /* About */
+    /* History Company */
+    .hist-1{
+        background-color: #E60012;
+        padding-bottom: 2px;
+        width: 500px;
+    }
+    .hist-2{
+        background-color: #fff;
+        margin: 0px 10px 10px 10px;
+        padding: 0% 3% 3% 3%;
+        background-image: url(../img/about-bc.jpg);
+    }
+
+    /* About the company */
+    .about-company{
+        height: 470px;
+        margin: 0px;
+        margin-top: 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .about-company img{
+        height: 180x;
+        width: 280px;
+    }
+    .about-company h3, .about-company p, .about-company h4{
+        padding: 1.5% 0% 1.5% 0%;
+        margin: 0px;
+        font-family: "roboto";
+    }
+    .about-company h3{
+        font-size: 18px;
+    }
+    .about-company p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 0%;
+        margin: 3% 0% 3% 0%;
+    }
+    .about-company h4{
+        font-size: 18px;
+    }
+    .about-company div{
+        height: auto;
+        width: 380px;
+    }
+    /* Contact */
+    .info{
+        height: 1500px;
+        background-image: url(../img/contact-bc-1.png);
+        background-repeat: no;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 200px;
+        flex-wrap: wrap;
+    }
+
+}
+/**********/
+/* 768 px */
+/**********/
+@media screen and (max-width: 768px){
+    /* Games */
+    /* Header */
+    header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-family: "roboto";
+    }
+    header nav ul li{
+        padding: 0px 10px;
+    }
+    /* Footer */
+    /* social media */
+    footer div:nth-child(3) img{
+        padding-right: 10px;
+    }
+    /* Text footer */
+    footer div:nth-child(1) p{
+        color: #fff;
+        font-family: "roboto";
+        font-size: 10px;
+    }
+    /* Contact number */
+    footer div:nth-child(2) h4{
+        margin: 0px;
+        padding: 0px;
+        color: #fff;
+        font-family: "roboto";
+        font-size: 12px;
+    }
+    footer div:nth-child(2) p{
+        margin: 0px;
+         padding: 0px;
+        color: #fff;
+        font-family: "roboto";
+        font-size: 10px;
+    }
+    .games-img{
+        background-color: #fff;
+        height: 700px;
+    }
+    /* About */
+    /* History */
+    .hist{
+        margin: 50px 100px 50px 130px;
+    }
+    .about-company{
+        height: 1300px;
+        margin: 0px;
+        margin-top: 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 75px;
+        flex-wrap: wrap;
+    }
+    /* Contact */
+    .form{
+        height: 550px;
+        width: 600px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    #email, #subject{
+        height: 40px;
+        width: 550px;
+    }
 }
 
